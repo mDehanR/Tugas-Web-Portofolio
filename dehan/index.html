@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <!-- Basic -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/Photo.jpg" />
+
+    <!-- preload Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+    </noscript>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="google69971c601d2409b3.html" />
+
+    <!-- Theme / PWA -->
+    <meta name="theme-color" content="#030014" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- SEO Utama -->
+    <title>Muhamad Dehan Roziku | Back-End Web Developer</title>
+    <meta name="description" content="Muhamad Dehan Roziku, Back-End Web Developer. Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan." />
+    <meta name="keywords" content="Muhamad Dehan Roziku, M. Dehan R, Back-End Web Developer, Dehan, Portofolio Dehan" />
+    <meta name="author" content="Muhamad Dehan Roziku" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ekizr.com/" />
+    <meta property="og:title" content="Muhamad Dehan Roziku | Back-End Web Developer" />
+    <meta property="og:description" content="Website resmi dan portofolio Muhamad Dehan Roziku, Back-End Web Developer." />
+    <meta property="og:image" content="https://ekizr.com/Meta.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://ekizr.com/" />
+    <meta name="twitter:title" content="Muhamad Dehan Roziku | Back-End Web Developer" />
+    <meta name="twitter:description" content="Website resmi dan portofolio Muhamad Dehan Roziku." />
+    <meta name="twitter:image" content="https://ekizr.com/Meta.png" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ekizr.com/" />
+
+    <!-- Structured Data: Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhamad Dehan Roziku",
+        "url": "https://github.com/mDehanR/",
+        "image": "https://scontent-cgk1-2.cdninstagram.com/v/t51.2885-19/484143086_1604236400243995_4508077572628948961_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-cgk1-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2gEigp512vIW9B5t1YJGvmX-2x0eQ6JXzHtoH5kyfuYIB2InFO7I1f8cUhLDiIojGKg&_nc_ohc=TAdQL7VKt1sQ7kNvwG207At&_nc_gid=UpY-8NJLTJxoGch-G8WOaw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Af1aO-QulDC2S8TtiqmPbwYIrxcYpD-iBd0EL5fQbE4u3g&oe=69EE6AFE&_nc_sid=8b3546",
+        "jobTitle": "Back-End Web Developer",
+        "description": "Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang saya kerjakan.",
+        "sameAs": ["https://www.instagram.com/mdhnr19/?hl=id", "https://github.com/mDehanR", "https://www.tiktok.com/@hanxzm"]
+      }
+    </script>
+
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #030014;
+        overflow-x: hidden;
+      }
+
+      /* Custom Animations */
+      @keyframes blink {
+        0%,
+        50% {
+          opacity: 1;
+        }
+        51%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .animate-blink {
+        animation: blink 1s infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #030014;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #6366f1, #a855f7);
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #a855f7, #6366f1);
+      }
+
+      /* Gradient Text */
+      .text-gradient {
+        background: linear-gradient(to right, #6366f1, #a855f7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* Glass Effect */
+      .glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Custom Button Gradient */
+      .btn-gradient {
+        background: linear-gradient(135deg, #6366f1, #a855f7);
+      }
+
+      .btn-gradient:hover {
+        background: linear-gradient(135deg, #a855f7, #6366f1);
+      }
+
+      /* Hide scrollbar for mobile menu */
+      .no-scroll {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body class="text-white">
+    <!-- HOME SECTION -->
+    <section id="Home" class="min-h-screen px-[5%] sm:px-[5%] lg:px-[10%] flex items-center">
+      <div class="container mx-auto">
+        <div class="flex flex-col items-center justify-center h-screen gap-0 sm:gap-12 lg:gap-20">
+          <!-- Left Column - Centered -->
+          <div class="w-full space-y-6 sm:space-y-8 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="space-y-4 sm:space-y-6 flex flex-col items-center">
+              <!-- Status Badge -->
+              <div class="inline-block animate-float lg:mx-0" data-aos="zoom-in" data-aos-delay="400">
+                <div class="relative group">
+                  <div class="absolute -inset-0.5 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+                  <div class="relative px-3 sm:px-4 py-2 rounded-full bg-black/40 backdrop-blur-xl border border-white/10">
+                    <span class="bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-transparent bg-clip-text sm:text-sm text-[0.7rem] font-medium flex items-center">
+                      <i data-lucide="sparkles" class="sm:w-4 sm:h-4 w-3 h-3 mr-2 text-blue-400"></i>
+                      Ready to Innovate
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Main Title -->
+              <div class="space-y-2" data-aos="fade-up" data-aos-delay="600">
+                <h1 class="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center">
+                  <span class="relative inline-block">
+                    <span class="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
+                    <span class="relative bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent"> Back-End </span>
+                  </span>
+                  <br />
+                  <span class="relative inline-block mt-2">
+                    <span class="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
+                    <span class="relative bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent"> Developer </span>
+                  </span>
+                </h1>
+              </div>
+
+              <!-- Typing Effect -->
+              <div class="h-8 flex items-center" data-aos="fade-up" data-aos-delay="800">
+                <span id="typing-text" class="text-xl md:text-2xl bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-transparent font-light"></span>
+                <span class="w-[3px] h-6 bg-gradient-to-t from-[#6366f1] to-[#a855f7] ml-1 animate-blink"></span>
+              </div>
+
+              <!-- Description -->
+              <p class="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed font-light text-center" data-aos="fade-up" data-aos-delay="1000">Menciptakan Website Yang Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.</p>
+
+              <!-- CTA Buttons - Centered -->
+              <div class="flex flex-row gap-3 w-full justify-center" data-aos="fade-up" data-aos-delay="1400">
+                <a href="#Portofolio">
+                  <button class="group relative w-[160px]">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-[#4f52c9] to-[#8644c5] rounded-xl opacity-50 blur-md group-hover:opacity-90 transition-all duration-700"></div>
+                    <div class="relative h-11 bg-[#030014] backdrop-blur-xl rounded-lg border border-white/10 leading-none overflow-hidden">
+                      <div class="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 bg-gradient-to-r from-[#4f52c9]/20 to-[#8644c5]/20"></div>
+                      <span class="absolute inset-0 flex items-center justify-center gap-2 text-sm group-hover:gap-3 transition-all duration-300">
+                        <span class="bg-gradient-to-r from-gray-200 to-white bg-clip-text text-transparent font-medium z-10"> Projects </span>
+                        <i data-lucide="external-link" class="w-4 h-4 text-gray-200 group-hover:rotate-45 transform transition-all duration-300 z-10"></i>
+                      </span>
+                    </div>
+                  </button>
+                </a>
+                <a href="#Contact">
+                  <button class="group relative w-[160px]">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-[#4f52c9] to-[#8644c5] rounded-xl opacity-50 blur-md group-hover:opacity-90 transition-all duration-700"></div>
+                    <div class="relative h-11 bg-[#030014] backdrop-blur-xl rounded-lg border border-white/10 leading-none overflow-hidden">
+                      <div class="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 bg-gradient-to-r from-[#4f52c9]/20 to-[#8644c5]/20"></div>
+                      <span class="absolute inset-0 flex items-center justify-center gap-2 text-sm group-hover:gap-3 transition-all duration-300">
+                        <span class="bg-gradient-to-r from-gray-200 to-white bg-clip-text text-transparent font-medium z-10"> Contact </span>
+                        <i data-lucide="mail" class="w-4 h-4 text-gray-200 group-hover:translate-x-1 transform transition-all duration-300 z-10"></i>
+                      </span>
+                    </div>
+                  </button>
+                </a>
+              </div>
+
+              <!-- Social Links -->
+              <div class="hidden sm:flex gap-4 justify-center" data-aos="fade-up" data-aos-delay="1600">
+                <a href="https://github.com/mDehanR" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                  <button class="group relative p-3">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                    <div class="relative rounded-xl bg-black/50 backdrop-blur-xl p-2 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
+                      <svg class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+                <a href="https://www.tiktok.com/@hanxzm" target="_blank" rel="noopener noreferrer" aria-label="TikTok Profile">
+                  <button class="group relative p-3">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                    <div class="relative rounded-xl bg-black/50 backdrop-blur-xl p-2 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
+                      <svg class="w-5 h-5 text-gray-400 group-hover:text-white" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.10z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+                <a href="https://www.instagram.com/mdhnr19/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+                  <button class="group relative p-3">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                    <div class="relative rounded-xl bg-black/50 backdrop-blur-xl p-2 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-all duration-300">
+                      <svg class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor" stroke-width="2" />
+                        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="About" class="h-auto pb-[10%] text-white overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] mt-10">
+      <!-- Header -->
+      <div class="text-center lg:mb-8 mb-2 px-[5%]">
+        <div class="inline-block relative group">
+          <h2 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]" data-aos="zoom-in-up" data-aos-duration="600">About Me</h2>
+        </div>
+        <p class="mt-2 text-gray-400 max-w-2xl mx-auto text-base sm:text-lg flex items-center justify-center gap-2" data-aos="zoom-in-up" data-aos-duration="800">
+          <i data-lucide="sparkles" class="w-5 h-5 text-purple-400"></i>
+          Transforming ideas into digital experiences
+          <i data-lucide="sparkles" class="w-5 h-5 text-purple-400"></i>
+        </p>
+      </div>
+
+      <div class="w-full mx-auto pt-8 sm:pt-12 relative">
+        <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div class="space-y-6 text-center lg:text-left">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold" data-aos="fade-right" data-aos-duration="1000">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]"> Hello, I'm </span>
+              <span class="block mt-2 text-gray-200" data-aos="fade-right" data-aos-duration="1300"> Muhamad Dehan Roziku </span>
+            </h2>
+
+            <p class="text-base sm:text-lg lg:text-xl text-gray-400 leading-relaxed text-center lg:text-justify pb-4 sm:pb-0" data-aos="fade-right" data-aos-duration="1500">
+              Saya adalah siswa dari SMKN 1 Garut kelas 10 jurusan Pengembangan Perangkat Lunak dan Gim. Saya berfokus pada penciptaan pengalaman digital yang menarik dan selalu berupaya memberikan solusi terbaik dalam setiap proyek yang
+              saya kerjakan.
+            </p>
+
+            <!-- Quote Section -->
+            <div class="relative bg-gradient-to-br from-[#6366f1]/5 via-transparent to-[#a855f7]/5 border border-[#6366f1]/30 rounded-2xl p-4 my-6 backdrop-blur-md shadow-2xl overflow-hidden" data-aos="fade-up" data-aos-duration="1700">
+              <div class="absolute top-2 right-4 w-16 h-16 bg-gradient-to-r from-[#6366f1]/20 to-[#a855f7]/20 rounded-full blur-xl"></div>
+              <div class="absolute -bottom-4 -left-2 w-12 h-12 bg-gradient-to-r from-[#a855f7]/20 to-[#6366f1]/20 rounded-full blur-lg"></div>
+
+              <div class="absolute top-3 left-4 text-[#6366f1] opacity-30">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
+                </svg>
+              </div>
+
+              <blockquote class="text-gray-300 text-center lg:text-left italic font-medium text-sm relative z-10 pl-6">"Leveraging AI as a professional tool, not a replacement."</blockquote>
+            </div>
+
+            <!-- View Projects Button Only -->
+            <div class="flex justify-center lg:justify-start">
+              <a href="#Portofolio" class="w-full lg:w-auto">
+                <button
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl"
+                >
+                  <i data-lucide="code" class="w-4 h-4 sm:w-5 sm:h-5"></i> View Projects
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Profile Image -->
+          <div class="flex justify-center items-center sm:p-12 sm:py-0 sm:pb-0 p-0 py-2 pb-2">
+            <div class="relative group" data-aos="fade-up" data-aos-duration="1000">
+              <div class="absolute -inset-6 opacity-[25%] z-0 hidden sm:block">
+                <div class="absolute inset-0 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 rounded-full blur-2xl"></div>
+                <div class="absolute inset-0 bg-gradient-to-l from-fuchsia-500 via-rose-500 to-pink-600 rounded-full blur-2xl opacity-50"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-blue-600 via-cyan-500 to-teal-400 rounded-full blur-2xl opacity-50"></div>
+              </div>
+
+              <div class="relative">
+                <div class="w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-[0_0_40px_rgba(120,119,198,0.3)] transform transition-all duration-700 group-hover:scale-105">
+                  <div class="absolute inset-0 border-4 border-white/20 rounded-full z-20 transition-all duration-700 group-hover:border-white/40 group-hover:scale-105"></div>
+
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40 z-10 hidden sm:block"></div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-blue-500/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block"></div>
+
+                  <img src="src/assets/pphan.jpg" alt="Profile" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-2" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTOFOLIO SECTION -->
+    <section id="Portofolio" class="md:px-[10%] px-[5%] w-full sm:mt-0 mt-[3rem] bg-[#030014] overflow-hidden pb-10">
+      <!-- Header -->
+      <div class="text-center pb-10" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">Portfolio Showcase</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2">Explore my journey through projects and technical expertise.</p>
+      </div>
+
+      <!-- Projects Tab -->
+      <div id="projects-tab" class="tab-content">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center">
+          <!-- Project 1 -->
+          <div class="group relative w-full" data-aos="fade-up-right" data-aos-duration="1000">
+            <div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-purple-500/20">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+
+              <div class="relative p-5 z-10">
+                <div class="relative overflow-hidden rounded-lg">
+                  <img src="src/assets/port1.png" alt="Project 1" class="w-full h-full object-cover aspect-[16/8] transform group-hover:scale-105 transition-transform duration-500" />
+                </div>
+
+                <div class="mt-4 space-y-3">
+                  <h3 class="text-xl font-semibold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">Project Web Anime</h3>
+
+                  <p class="text-gray-300/80 text-sm leading-relaxed line-clamp-2">Web stream anime yang belum selesai dan masih tahap pengembangan.</p>
+
+                  <div class="pt-4 flex items-center justify-between">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                      <span class="text-sm font-medium">Live Demo</span>
+                      <i data-lucide="https://mdehanr.github.io/Animiu/" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/90 transition-all duration-200 hover:scale-105 active:scale-95">
+                      <span class="text-sm font-medium">Details</span>
+                      <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="group relative w-full" data-aos="fade-up" data-aos-duration="1200">
+            <div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-purple-500/20">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+
+              <div class="relative p-5 z-10">
+                <div class="relative overflow-hidden rounded-lg">
+                  <img src="src/assets/port2.png" alt="Project 2" class="w-full h-full object-cover aspect-[16/8] transform group-hover:scale-105 transition-transform duration-500" />
+                </div>
+
+                <div class="mt-4 space-y-3">
+                  <h3 class="text-xl font-semibold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">Project Kalkulator</h3>
+
+                  <p class="text-gray-300/80 text-sm leading-relaxed line-clamp-2">Kalkulator sederhana dengan suara saat di klik tombolnya dan masih tahap pengembangan.</p>
+
+                  <div class="pt-4 flex items-center justify-between">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                      <span class="text-sm font-medium">Live Demo</span>
+                      <i data-lucide="https://mdehanr.github.io/Kalkulator-Sederhana/" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/90 transition-all duration-200 hover:scale-105 active:scale-95">
+                      <span class="text-sm font-medium">Details</span>
+                      <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="group relative w-full" data-aos="fade-up-left" data-aos-duration="1000">
+            <div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-purple-500/20">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+
+              <div class="relative p-5 z-10">
+                <div class="relative overflow-hidden rounded-lg">
+                  <img src="src/assets/port3.png" alt="Project 3" class="w-full h-full object-cover aspect-[16/8] transform group-hover:scale-105 transition-transform duration-500" />
+                </div>
+
+                <div class="mt-4 space-y-3">
+                  <h3 class="text-xl font-semibold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">Project Web Rekap Nilai</h3>
+
+                  <p class="text-gray-300/80 text-sm leading-relaxed line-clamp-2">Web rekap nilai yang masih tahap pengembangan tetapi sudah memakai teknologi PHP Native.</p>
+
+                  <div class="pt-4 flex items-center justify-between">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                      <span class="text-sm font-medium">Live Demo</span>
+                      <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/90 transition-all duration-200 hover:scale-105 active:scale-95">
+                      <span class="text-sm font-medium">Details</span>
+                      <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="Contact" class="px-[5%] sm:px-[5%] lg:px-[10%] pb-10">
+      <div class="text-center lg:mt-[5%] mt-10 mb-2 sm:px-0 px-[5%]">
+        <h2 data-aos="fade-down" data-aos-duration="1000" class="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">Hubungi Saya</h2>
+        <p data-aos="fade-up" data-aos-duration="1100" class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2">Punya pertanyaan? Kirimi saya pesan, dan saya akan segera membalasnya.</p>
+      </div>
+
+      <div class="h-auto py-10 flex items-center justify-center">
+        <div class="container px-[1%]">
+          <div class="bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl p-5 py-10 sm:p-10 transform transition-all duration-500 hover:shadow-[#6366f1]/10 max-w-2xl mx-auto">
+            <div class="flex justify-between items-start mb-8">
+              <div>
+                <h2 class="text-4xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">Hubungi</h2>
+                <p class="text-gray-400">Ada yang ingin didiskusikan? Kirim saya pesan dan mari kita bicara.</p>
+              </div>
+              <i data-lucide="share-2" class="w-10 h-10 text-[#6366f1] opacity-50"></i>
+            </div>
+
+            <form action="https://formsubmit.co/muhamaddehanr@gmail.com" method="POST" class="space-y-6">
+              <input type="hidden" name="_subject" value="Pesan Baru dari Website Portfolio" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+
+              <div data-aos="fade-up" data-aos-delay="100" class="relative group">
+                <i data-lucide="user" class="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors"></i>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nama Anda"
+                  class="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30"
+                  required
+                />
+              </div>
+
+              <div data-aos="fade-up" data-aos-delay="200" class="relative group">
+                <i data-lucide="mail" class="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors"></i>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Anda"
+                  class="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30"
+                  required
+                />
+              </div>
+
+              <div data-aos="fade-up" data-aos-delay="300" class="relative group">
+                <i data-lucide="message-square" class="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors"></i>
+                <textarea
+                  name="message"
+                  placeholder="Pesan Anda"
+                  rows="4"
+                  class="w-full resize-none p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                data-aos="fade-up"
+                data-aos-delay="400"
+                type="submit"
+                class="w-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#6366f1]/20 active:scale-[0.98] flex items-center justify-center gap-2"
+              >
+                <i data-lucide="send" class="w-5 h-5"></i>
+                Kirim Pesan
+              </button>
+            </form>
+
+            <div class="mt-10 pt-6 border-t border-white/10 flex justify-center space-x-6">
+              <a href="https://github.com/mDehanR" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors">
+                <svg class="w-5 h-5 text-gray-400 hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.tiktok.com/@hanxzm" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors">
+                <svg class="w-5 h-5 text-gray-400 hover:text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.10z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/mdhnr19/" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors">
+                <svg class="w-5 h-5 text-gray-400 hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor" stroke-width="2" />
+                  <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="px-[5%] sm:px-[5%] lg:px-[10%] pb-6">
+      <center>
+        <hr class="my-3 border-gray-400 opacity-15 sm:mx-auto lg:my-6 text-center" />
+        <span class="block text-sm pb-4 text-gray-500 text-center">
+          © <span id="year"></span>
+          <a href="#" class="hover:underline">Dehan</a>
+          . All Rights Reserved.
+        </span>
+      </center>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        once: true,
+        offset: 10,
+      });
+
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Set current year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Navbar scroll effect
+      const navbar = document.getElementById("navbar");
+      if (navbar) {
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 20) {
+            navbar.classList.add("bg-[#030014]/50", "backdrop-blur-xl");
+            navbar.classList.remove("bg-transparent");
+          } else {
+            navbar.classList.remove("bg-[#030014]/50", "backdrop-blur-xl");
+            navbar.classList.add("bg-transparent");
+          }
+        });
+      }
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      let isMenuOpen = false;
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener("click", () => {
+          isMenuOpen = !isMenuOpen;
+          if (isMenuOpen) {
+            mobileMenu.classList.remove("max-h-0", "opacity-0");
+            mobileMenu.classList.add("max-h-screen", "opacity-100");
+            document.body.classList.add("no-scroll");
+            mobileMenuBtn.innerHTML = '<i data-lucide="x" class="w-6 h-6"></i>';
+          } else {
+            mobileMenu.classList.add("max-h-0", "opacity-0");
+            mobileMenu.classList.remove("max-h-screen", "opacity-100");
+            document.body.classList.remove("no-scroll");
+            mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
+          }
+          lucide.createIcons();
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+          link.addEventListener("click", () => {
+            isMenuOpen = false;
+            mobileMenu.classList.add("max-h-0", "opacity-0");
+            mobileMenu.classList.remove("max-h-screen", "opacity-100");
+            document.body.classList.remove("no-scroll");
+            mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
+            lucide.createIcons();
+          });
+        });
+      }
+
+      // Typing effect
+      const words = ["Network & Telecom Student", "Tech Enthusiast"];
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isTyping = true;
+      const typingText = document.getElementById("typing-text");
+
+      function handleTyping() {
+        if (isTyping) {
+          if (charIndex < words[wordIndex].length) {
+            typingText.textContent += words[wordIndex][charIndex];
+            charIndex++;
+          } else {
+            setTimeout(() => (isTyping = false), 2000);
+          }
+        } else {
+          if (charIndex > 0) {
+            typingText.textContent = typingText.textContent.slice(0, -1);
+            charIndex--;
+          } else {
+            wordIndex = (wordIndex + 1) % words.length;
+            isTyping = true;
+          }
+        }
+      }
+
+      setInterval(handleTyping, isTyping ? 100 : 50);
+
+      // Hero image hover effect
+      const heroContainer = document.getElementById("hero-image-container");
+      const heroImage = document.getElementById("hero-image");
+      const heroGlow = document.getElementById("hero-glow");
+      const heroWrapper = document.getElementById("hero-image-wrapper");
+
+      if (heroContainer && heroImage) {
+        heroContainer.addEventListener("mouseenter", () => {
+          if (heroGlow) heroGlow.classList.add("opacity-50", "scale-105");
+          if (heroGlow) heroGlow.classList.remove("opacity-20", "scale-100");
+          if (heroImage) heroImage.classList.add("scale-[95%]", "sm:scale-[90%]", "md:scale-[90%]", "lg:scale-[90%]", "rotate-2");
+          if (heroImage) heroImage.classList.remove("scale-[90%]", "sm:scale-[80%]", "md:scale-[80%]", "lg:scale-[80%]");
+          if (heroWrapper) heroWrapper.classList.add("scale-105");
+          if (heroWrapper) heroWrapper.classList.remove("scale-100");
+        });
+
+        heroContainer.addEventListener("mouseleave", () => {
+          if (heroGlow) heroGlow.classList.remove("opacity-50", "scale-105");
+          if (heroGlow) heroGlow.classList.add("opacity-20", "scale-100");
+          if (heroImage) heroImage.classList.remove("scale-[95%]", "sm:scale-[90%]", "md:scale-[90%]", "lg:scale-[90%]", "rotate-2");
+          if (heroImage) heroImage.classList.add("scale-[90%]", "sm:scale-[80%]", "md:scale-[80%]", "lg:scale-[80%]");
+          if (heroWrapper) heroWrapper.classList.remove("scale-105");
+          if (heroWrapper) heroWrapper.classList.add("scale-100");
+        });
+      }
+
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            const top = target.offsetTop - 100;
+            window.scrollTo({
+              top: top,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
